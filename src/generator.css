@@ -1,0 +1,15 @@
+.Generator {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    color: whitesmoke;
+    letter-spacing: 100%;
+    justify-content: center;
+    margin-top: 550px;
+    margin-bottom: 100px;
+}
+
+
+.modal-content {
+    background-color: whitesmoke;
+}

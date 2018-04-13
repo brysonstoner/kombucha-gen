@@ -1,0 +1,8 @@
+.Background {
+    background-image: url("./images/bottlesbkg.jpg");
+    background-size: cover;
+    /* height: 100vh; */
+    /*height:1024px;  sets height to size of image, add space where no content */
+    height: fit-content;
+    background-position: center;
+}
