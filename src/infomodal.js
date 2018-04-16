@@ -12,8 +12,10 @@ import ParallaxTest from './test.js';
 
 
 class Info extends React.Component {
+
     constructor(props) {
       super(props);
+      
       this.state = {
         modal: false
       };

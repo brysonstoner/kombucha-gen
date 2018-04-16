@@ -8,8 +8,7 @@ import './background.css';
 import './images/bottlelogo.jpg';
 import { Parallax, Background } from 'react-parallax';
 import ParallaxTest from './test.js';
-
-
+import AddFlavor from './addflavor.js';
 
 class GeneratorPopup extends React.Component {
     constructor(props) {
@@ -26,7 +25,7 @@ class GeneratorPopup extends React.Component {
         modal: !this.state.modal
       });
     }
-  
+
     render() {
       return (
         <div className="popup">
@@ -36,6 +35,8 @@ class GeneratorPopup extends React.Component {
             <ModalBody>
                 <div>
                   < Generator />
+                  <br />
+                  < AddFlavor />
                 </div>  
             </ModalBody>
             <ModalFooter>

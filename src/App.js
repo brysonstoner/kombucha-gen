@@ -14,6 +14,7 @@ import Info from './infomodal.js';
 import HowToMake from './howtomake.js';
 import Map from './map.js';
 import Weather from './weather.js';
+import AddFlavor from './addflavor.js';
 
 export default class App extends Component {
   render() {
