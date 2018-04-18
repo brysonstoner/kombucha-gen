@@ -21,6 +21,7 @@ class AddFlavor extends Component {
         };
 
         this.closeModal = this.closeModal.bind(this);
+        this.submitData = this.submitData.bind(this);
         this.flavornumber = this.flavornumber.bind(this);
         this.flavorname = this.flavorname.bind(this);
         this.toggle = this.toggle.bind(this);
@@ -36,10 +37,10 @@ class AddFlavor extends Component {
 
     submitData() {
         axios.post('/submitData', {
-            flavornumber: this.state.flavornumber,
+            // flavornumber: this.state.flavornumber,
             flavorname: this.state.flavorname,
         }).then(() => {
-            this.closeModal();
+            this.toggle()
         })
     }
 
@@ -89,15 +90,15 @@ class AddFlavor extends Component {
                             <FormGroup>
                                 <Label for="primarySecondary">Main Flavor or Accompanying Flavor?</Label>
                                 <Input onChange={this.flavornumberChange} type="select" value={this.state.flavornumber} name="select" id="primaryorsecondary">
-                                    <option>Main Flavor</option>
-                                    <option>Accompanying Flavor</option>
+                                    <option>Primary Flavor</option>
+                                    <option>... or maybe a hint of...</option>
                                 </Input>
                             </FormGroup>
                         </Form>
                         {/* </div> */}
                     </ModalBody>
                     <ModalFooter>
-                        <Button color="light" onClick={this.toggle}>Submit!</Button>{' '}
+                        <Button color="light" onClick={this.submitData}>Submit!</Button>{' '}
                         {/* <Button color="secondary" onClick={this.toggle}>Cancel</Button> */}
                     </ModalFooter>
                 </Modal>

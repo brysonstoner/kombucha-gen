@@ -27,8 +27,9 @@ class Generator extends Component {
   
   render() {
     return (
-      <div className="popup">
+      <div className="genPopup">
         <button onClick={this.clickHandler} > Click Here to Generate a Flavor! </button>
+        <br />
         <br />
         {this.state.name}
       </div>
