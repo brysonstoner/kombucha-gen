@@ -37,12 +37,13 @@ class AddFlavor extends Component {
 
     submitData() {
         axios.post('/submitData', {
-            // flavornumber: this.state.flavornumber,
+            flavornumber: this.state.flavornumber,
             flavorname: this.state.flavorname,
         }).then(() => {
             this.toggle()
         })
     }
+//these are all methods!!!!!!!!!
 
     flavornameChange(e) {
         this.setState({
@@ -90,8 +91,9 @@ class AddFlavor extends Component {
                             <FormGroup>
                                 <Label for="primarySecondary">Main Flavor or Accompanying Flavor?</Label>
                                 <Input onChange={this.flavornumberChange} type="select" value={this.state.flavornumber} name="select" id="primaryorsecondary">
-                                    <option>Primary Flavor</option>
-                                    <option>... or maybe a hint of...</option>
+                                    <option value="" id="form">Select</option>
+                                    <option value="1">Primary Flavor</option>
+                                    <option value="2">... try a hint of...</option>
                                 </Input>
                             </FormGroup>
                         </Form>
