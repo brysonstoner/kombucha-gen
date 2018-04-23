@@ -21,12 +21,12 @@ export default class App extends Component {
     return (
       <div className="Background">
         <div className="Weather">
-        < Weather />
-        <div className="Placeholder" />
-        < ParallaxTest />
-        <div className="Generator">
-          < GeneratorPopup /> < Info /> < HowToMake /> < Map />
-        </div>
+          < Weather />
+          <div className="Placeholder" />
+          < ParallaxTest />
+          <div className="Generator">
+            < GeneratorPopup /> < Info /> < HowToMake /> < Map />
+          </div>
         </div>
       </div>
     )

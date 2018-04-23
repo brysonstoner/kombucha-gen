@@ -51,6 +51,7 @@ export default class Weather extends Component {
         console.log(iconUrl);
             return (
             <div className='weatherwelcome'>
+            
                 Welcome! The Temperature in Bozeman is Currently {this.state.data.main.temp} °F. ~ The Humidity is {this.state.data.main.humidity}%. Current Conditions:<img src={ iconUrl } />
             </div>
             

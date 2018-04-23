@@ -26,6 +26,15 @@
   font-size: large;
 }
 
+.mapDiv {
+  display: flex;
+  width: 100%;
+}
+
+.mapModal {
+  width: 75%;
+}
+
 .Placeholder {
   content:url(./images/bottlelogo.jpg);
   margin: auto;
@@ -33,5 +42,4 @@
   width: 80%;
   padding: 30px;
 }
-
 

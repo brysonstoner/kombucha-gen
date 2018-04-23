@@ -2,14 +2,58 @@
     display: flex;
     flex-direction: row;
     text-align: center;
-    color: whitesmoke;
+    /* color: rgba(15, 182, 0, 0.228) !important; */
     letter-spacing: 100%;
     justify-content: center;
     margin-top: 550px;
     margin-bottom: 100px;
 }
 
+/* .modal-content {
+    background-color: rgb(245, 245, 245);
+} */
 
-.modal-content {
-    background-color: whitesmoke;
+
+.genText {
+    background-color: #bab6b18e;
+    display: flex;
 }
+
+.modal-body {
+    background-image: url('./images/boochjar.jpg');
+    background-size: 100%;
+}
+
+.modal-header, .modal-footer{
+    background-color: rgba(110, 61, 17, 0.81);
+    background-image: url(./images/headerFooter.png);
+}
+
+.button {
+    background: #3c4c5763;
+}
+
+.generateButton
+    {
+        background: #00000163;
+    }
+
+.h6
+    {
+        color: red;
+    }
+.modalTitle {
+        display: flex;
+        align-items: right;
+        color: black;
+        size: 30pt;
+        background-color: #bab6b18e;
+        font-weight: 900;
+        width: 100%;
+      }
+
+/* .genPopup {
+    background: #3c4c5763
+} */
+
+/* modal button color #3c4c5763 */

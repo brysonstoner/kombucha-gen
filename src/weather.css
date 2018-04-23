@@ -2,5 +2,8 @@
     text-align: center;
     color: white;
     margin-bottom: -10px;
-    font: 20px times, bold;
+    font: 25px serif, arial, bold;
+    font-style: oblique;
+    background-color: #edaa5846;
+    width: auto;
 }

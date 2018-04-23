@@ -8,6 +8,8 @@ import {
 } from 'reactstrap';
 import { connect } from 'react-redux';
 import axios from 'axios';
+import './generator.css';
+
 
 class AddFlavor extends Component {
 
@@ -78,22 +80,22 @@ class AddFlavor extends Component {
     render() {
         return (
             <div className="popup">
-                <Button color="#000000" onClick={this.toggle}>{this.props.buttonLabel}Contribute to the flavor list.</Button>
+                <Button className="generateButton" onClick={this.toggle}>{this.props.buttonLabel}Contribute to the flavor list.</Button>
                 <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>
                     <ModalHeader toggle={this.toggle}>Add a Flavor</ModalHeader>
                     <ModalBody>
                         {/* <div> */}
                         <Form>
                             <FormGroup>
-                                <Label for="flavorInput">Have I missed something?  Add a flavor to the database:</Label>
-                                <Input onChange={this.flavornameChange} type="textarea" value={this.state.flavorname} placeholder="Type a flavor here"></Input>
+                                <Label for="flavorInput"><h6>Have I missed something?  Add a flavor to the database:</h6></Label>
+                                <Input className="generateButton" onChange={this.flavornameChange} type="textarea" value={this.state.flavorname} placeholder="Type a flavor here"></Input>
                             </FormGroup>
                             <FormGroup>
                                 <Label for="primarySecondary">Main Flavor or Accompanying Flavor?</Label>
-                                <Input onChange={this.flavornumberChange} type="select" value={this.state.flavornumber} name="select" id="primaryorsecondary">
+                                <Input className="generateButton" onChange={this.flavornumberChange} type="select" value={this.state.flavornumber} name="select" id="primaryorsecondary">
                                     <option value="" id="form">Select</option>
                                     <option value="1">Primary Flavor</option>
-                                    <option value="2">... try a hint of...</option>
+                                    <option value="2">... or add a hint of...</option>
                                 </Input>
                             </FormGroup>
                         </Form>

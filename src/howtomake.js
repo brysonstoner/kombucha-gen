@@ -30,9 +30,13 @@ class HowToMake extends React.Component {
     render() {
       return (
         <div className="popup">
-          <Button color="#000000" onClick={this.toggle}>{this.props.buttonLabel}Get Your First Batch Started</Button>
+          <Button className="generateButton" onClick={this.toggle}>{this.props.buttonLabel}Get Your First Batch Started</Button>
           <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>
-            <ModalHeader toggle={this.toggle}>How to get started</ModalHeader>
+            <ModalHeader toggle={this.toggle}>
+            <div className="modalTitle">
+            How to get started
+            </div>
+            </ModalHeader>
             <ModalBody>
                 <div>
                   Some nice instructions will be here!

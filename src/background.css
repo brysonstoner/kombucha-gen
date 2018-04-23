@@ -6,3 +6,8 @@
     height: fit-content;
     background-position: center;
 }
+
+.makethebackgroundanimage{
+    background-image: url('./images/bottlelogo.jpg');
+}
+

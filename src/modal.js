@@ -5,6 +5,7 @@ import './App.css';
 import Generator from './generator.js';
 import './generator.css';
 import './background.css';
+import'./modal.css';
 import './images/bottlelogo.jpg';
 import { Parallax, Background } from 'react-parallax';
 import ParallaxTest from './test.js';
@@ -28,10 +29,13 @@ class GeneratorPopup extends React.Component {
 
     render() {
       return (
-        <div className="popup">
-          <Button color="#000000" onClick={this.toggle}>{this.props.buttonLabel}Try the Flavor Generator!</Button>
+        <div>
+          <Button className="generateButton" onClick={this.toggle}>{this.props.buttonLabel}Try the Flavor Generator!</Button>
           <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>
-            <ModalHeader toggle={this.toggle}>Kombucha Flavor Generator</ModalHeader>
+            <ModalHeader className="modalTitle" toggle={this.toggle}>
+            <div className="modalTitle">
+            Kombucha Flavor Generator </div> 
+            </ModalHeader>
             <ModalBody>
                 <div>
                   < Generator />
