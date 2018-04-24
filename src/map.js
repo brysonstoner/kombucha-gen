@@ -5,7 +5,7 @@ import './App.css';
 import Generator from './generator.js';
 import './generator.css';
 import './background.css';
-import './images/bottlelogo.jpg';
+import './images/bottlelogo.png';
 import { Parallax, Background } from 'react-parallax';
 import ParallaxTest from './test.js';
 

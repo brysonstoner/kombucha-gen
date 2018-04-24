@@ -26,6 +26,11 @@
   font-size: large;
 }
 
+.howToMakeDiv {
+  display: flex;
+  flex-direction: column;
+}
+
 .mapDiv {
   display: flex;
   width: 100%;
@@ -36,7 +41,7 @@
 }
 
 .Placeholder {
-  content:url(./images/bottlelogo.jpg);
+  content:url(./images/bottlelogo.png);
   margin: auto;
   opacity: 50%;
   width: 80%;

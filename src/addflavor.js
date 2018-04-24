@@ -9,6 +9,7 @@ import {
 import { connect } from 'react-redux';
 import axios from 'axios';
 import './generator.css';
+import './App.css';
 
 
 class AddFlavor extends Component {
@@ -82,7 +83,9 @@ class AddFlavor extends Component {
             <div className="popup">
                 <Button className="generateButton" onClick={this.toggle}>{this.props.buttonLabel}Contribute to the flavor list.</Button>
                 <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>
-                    <ModalHeader toggle={this.toggle}>Add a Flavor</ModalHeader>
+                    {/* <div className="modalTitle"> */}
+                    <ModalHeader toggle={this.toggle} className="modalTitle">Add a Flavor</ModalHeader>
+                    {/* </div> */}
                     <ModalBody>
                         {/* <div> */}
                         <Form>
