@@ -9,9 +9,10 @@
     margin-bottom: 100px;
 }
 
-/* .modal-content {
-    background-color: rgb(245, 245, 245);
-} */
+.addFlavorText {
+    font-weight: 800;
+    background-color: #bab6b18e;
+}
 
 
 .genText {
@@ -22,6 +23,7 @@
 .modal-body {
     background-image: url('./images/boochjar.jpg');
     background-size: 100%;
+    /* add max background size? */
 }
 
 .modal-header, .modal-footer{
@@ -38,10 +40,6 @@
         background: #00000163;
     }
 
-.h6
-    {
-        color: red;
-    }
 .modalTitle {
         display: flex;
         align-items: right;
@@ -51,6 +49,15 @@
         font-weight: 900;
         width: 100%;
       }
+
+#modalDialog {
+          border: black solid 3px;
+      }
+
+#modal-open {
+    display: flex;
+
+}
 
 /* .genPopup {
     background: #3c4c5763

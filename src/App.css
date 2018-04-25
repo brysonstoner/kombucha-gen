@@ -6,11 +6,6 @@
   height: 100%;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
 .App-header {
   background-color: #222;
   height: 150px;
@@ -26,18 +21,17 @@
   font-size: large;
 }
 
-.howToMakeDiv {
+/* .howToMakeDiv {
   display: flex;
   flex-direction: column;
-}
+} */
 
 .mapDiv {
-  display: flex;
-  width: 100%;
+  width: auto;
 }
 
 .mapModal {
-  width: 75%;
+  width: 100% !important;
 }
 
 .Placeholder {
@@ -48,3 +42,34 @@
   padding: 30px;
 }
 
+#theMap {
+  width: 1000px;
+}
+
+.getStarted {
+  display: flex;
+  margin: auto;
+  width: 1000px !important;
+  justify-content: center;
+}
+
+/* .theDangInstructionsModal {
+  border: solid red 5px;
+} */
+
+.modal-content {
+  width: auto;
+}
+
+.topImage {
+  padding-top: 280px;
+}
+
+.bottomImage {
+  padding-bottom: 185px;
+}
+
+.theMap {
+  padding-top: 10px;
+  padding-bottom: 0px;
+}

@@ -31,15 +31,15 @@ class Map extends React.Component {
       return (
         <div className="popup">
           <Button className="generateButton" onClick={this.toggle}>{this.props.buttonLabel}Where to get Kombucha</Button>
-          <Modal isOpen={this.state.modal} toggle={this.toggle} className="mapModal">
+          <Modal isOpen={this.state.modal} toggle={this.toggle} className="getStarted">
             <ModalHeader toggle={this.toggle}>
             <div className="modalTitle">
             Let Someone Else Make it For You!
             </div>
             </ModalHeader>
-            <ModalBody>
-                <div className="mapDiv">
-                    <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1VbNF5kqPvqkMiqCVgefes1wLb0l3UPO7" width="465" height="500"></iframe>
+            <ModalBody className="modalContent">
+                <div className="modalContent">
+                    <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1VbNF5kqPvqkMiqCVgefes1wLb0l3UPO7" width="965" height="500" className="theMap"></iframe>
                 </div>  
             </ModalBody>
             <ModalFooter>

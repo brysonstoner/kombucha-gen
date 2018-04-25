@@ -83,18 +83,27 @@ class AddFlavor extends Component {
             <div className="popup">
                 <Button className="generateButton" onClick={this.toggle}>{this.props.buttonLabel}Contribute to the flavor list.</Button>
                 <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>
-                    {/* <div className="modalTitle"> */}
-                    <ModalHeader toggle={this.toggle} className="modalTitle">Add a Flavor</ModalHeader>
-                    {/* </div> */}
+                    <ModalHeader toggle={this.toggle}>
+                    <div className="modalTitle">
+                    Add a Flavor
+                    </div>
+                    </ModalHeader>
                     <ModalBody>
-                        {/* <div> */}
                         <Form>
                             <FormGroup>
-                                <Label for="flavorInput"><h6>Have I missed something?  Add a flavor to the database:</h6></Label>
+                                <Label for="flavorInput">
+                                <div className="addFlavorText">
+                                Have I missed something?  Add a flavor to the database:
+                                </div>
+                                </Label>
                                 <Input className="generateButton" onChange={this.flavornameChange} type="textarea" value={this.state.flavorname} placeholder="Type a flavor here"></Input>
                             </FormGroup>
                             <FormGroup>
-                                <Label for="primarySecondary">Main Flavor or Accompanying Flavor?</Label>
+                                <Label for="primarySecondary">
+                                <div className="addFlavorText">
+                                Main Flavor or Accompanying Flavor?
+                                </div>
+                                </Label>
                                 <Input className="generateButton" onChange={this.flavornumberChange} type="select" value={this.state.flavornumber} name="select" id="primaryorsecondary">
                                     <option value="" id="form">Select</option>
                                     <option value="1">Primary Flavor</option>

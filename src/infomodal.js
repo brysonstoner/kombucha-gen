@@ -40,7 +40,7 @@ class Info extends React.Component {
             </div>
             </ModalHeader>
             <ModalBody>
-                <div className="infoModal">
+                <div className="addFlavorText">
                   Here will be a very nice looking bunch of words, with very nice CSS!  :)
                 </div>  
             </ModalBody>
