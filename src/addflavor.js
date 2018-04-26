@@ -11,7 +11,6 @@ import axios from 'axios';
 import './generator.css';
 import './App.css';
 
-
 class AddFlavor extends Component {
 
     constructor(props) {
@@ -32,14 +31,17 @@ class AddFlavor extends Component {
         this.flavornumberChange = this.flavornumberChange.bind(this);
     }
 
-    toggle() {
+    toggle() 
+    {
         this.setState({
             modal: !this.state.modal
         });
     }
 
     submitData() {
-        axios.post('/submitData', {
+        //add if/else statement
+        axios.post
+        ('/submitData', {
             flavornumber: this.state.flavornumber,
             flavorname: this.state.flavorname,
         }).then(() => {
@@ -105,7 +107,7 @@ class AddFlavor extends Component {
                                 </div>
                                 </Label>
                                 <Input className="generateButton" onChange={this.flavornumberChange} type="select" value={this.state.flavornumber} name="select" id="primaryorsecondary">
-                                    <option value="" id="form">Select</option>
+                                    <option value="0" id="form">Select</option>
                                     <option value="1">Primary Flavor</option>
                                     <option value="2">... or add a hint of...</option>
                                 </Input>
@@ -126,3 +128,11 @@ class AddFlavor extends Component {
 
 // export default connect ((state) => (state))(AddFlavor);
 export default AddFlavor;
+
+
+
+/*
+        if (this.state.flavornumber = 0) {
+            console.log("please select an option");
+                    }
+*/
