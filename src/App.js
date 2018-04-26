@@ -24,9 +24,17 @@ export default class App extends Component {
           < Weather />
           <div className="Placeholder" />
           < ParallaxTest />
-          <div className="Generator">
-            < GeneratorPopup /> < Info /> < HowToMake /> < Map />
+          <div className="scrollDown">
+          Scroll Down
           </div>
+          <div className="Generator">
+          < Info /> < GeneratorPopup /> < HowToMake /> < Map />
+          </div>
+          <div>
+          </div>
+        </div>
+        <div className="adios">
+          Thanks For Visiting! © 2018 Bryson Stoner/Bozeman Tech Help
         </div>
       </div>
     )

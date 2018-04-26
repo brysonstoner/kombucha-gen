@@ -36,12 +36,18 @@ class Info extends React.Component {
           <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>
             <ModalHeader toggle={this.toggle}>
             <div className="modalTitle">
-            About This App!
+            About BKR!
             </div>
             </ModalHeader>
             <ModalBody>
-                <div className="addFlavorText">
-                  Here will be a very nice looking bunch of words, with very nice CSS!  :)
+                <div id="aboutBKR">
+                 <h2> Hello and welcome to the Bozeman Kombucha Resource!</h2>
+                 <br />
+                 <h4> This is an online resource for the kombucha enthusiast of any level.  Whether you're starting with just tea, sugar, and water, or are looking for a local establishment that will pour you some tasty 'booch, you've found the right place!</h4>
+                 <br/>
+                 <h4> Also included in this guide:</h4>
+                  <h5>- Tired of making the same ol' flavor?  Try our flavor generator.</h5>
+                  <h5>- Did you try something that turned out great?  Submit the flavor to our database!</h5>
                 </div>  
             </ModalBody>
             <ModalFooter>

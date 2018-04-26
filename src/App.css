@@ -21,6 +21,18 @@
   font-size: large;
 }
 
+#aboutBKR {
+  background-color: #bab6b18e;
+  font-style: oblique bold;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.h3 {
+  color: green;
+}
+
+
 /* .howToMakeDiv {
   display: flex;
   flex-direction: column;
@@ -72,4 +84,21 @@
 .theMap {
   padding-top: 10px;
   padding-bottom: 0px;
+}
+
+.adios {
+  text-align: center;
+  color: white;
+  font: 20px serif, arial, bold;
+  font-style: oblique;
+  background-color: #edaa5846;
+  width: auto;
+}
+
+.scrollDown {
+  text-align: center;
+  color: white;
+  font:10px serif, arial, bold;
+  font-style: oblique;
+  width: auto;
 }
